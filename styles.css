@@ -1,0 +1,48 @@
+.images-page {    
+    display: grid;    
+    grid-template-columns: repeat(auto-fill, 400px);
+    justify-content: center;
+    gap: 10px;
+  }
+
+
+  .img-search{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+  }
+
+  .img-all{
+      width: 100%;
+      height: 100%;
+  }
+  .pagination {
+    margin-top: 20px;
+  }
+  .pagination .container-number{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .pagination .container-number:nth-child(1){
+    margin-left: 10px;
+  }
+  
+  .pagination .container-number a{
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    color: white !important;
+  }
+  
+  .pagination a:hover {
+    text-decoration: none;
+  }
+  
+  #btn-see-again{
+    font-size: 30px;
+  }

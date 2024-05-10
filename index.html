@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API de estados HTTP</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <p class="mt-3 display-4 text-center">Galeria de estados</p>
+
+    <div class="container d-flex align-items-center justify-content-between">
+      <div
+        id="section-see"
+        class="d-flex align-items-center justify-content-end"
+      >
+        <p class="m-0 py-0 px-3">Ver:</p>
+        <select name="" id="select" class="form-select">
+          <option>3</option>
+          <option>6</option>
+          <option>9</option>
+          <option>12</option>
+          <option>15</option>
+        </select>
+      </div>
+      <div class="d-flex align-items-center justify-content-end">
+        <p class="m-0 py-0 px-3">Buscar estado:</p>
+        <input
+          id="input-search"
+          type="text"
+          class="form-control w-25 align-self-end"
+        />
+      </div>
+    </div>
+    <br />
+    <div id="page-all">
+      <div class="container images-page" id="images-container">
+        <!-- Aquí se cargarán las imágenes -->
+      </div>
+      <div
+        class="container pagination d-flex bg-white py-2 fixed-bottom mb-3 align-items-center justify-content-end"
+        id="pagination"
+      >
+        <!-- Aquí se mostrará la paginación -->
+      </div>
+    </div>
+
+    <div id="page-search" hidden class="container text-center">
+      <img id="img-searched" class="img-search" alt="" />
+
+      <h4 role="button" id="btn-see-again" class="mt-3 text-primary">
+        Ver todos
+      </h4>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
